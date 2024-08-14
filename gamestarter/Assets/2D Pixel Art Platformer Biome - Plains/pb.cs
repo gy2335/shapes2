@@ -6,8 +6,10 @@ public class pb : MonoBehaviour
 {
     [SerializeField] private float speed;
     private Rigidbody2D body;
+    private Animator anim;
     private bool grounded;
-    
+    private float horizontalInput;
+
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,7 @@ public class pb : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        horizontalInput = Input.GetAxis("Horizontal");
         body.velocity = new Vector2(Input.GetAxis("Horizontal")*speed, body.velocity.y);
     
     if( Input.GetKey(KeyCode.Space) && grounded == true ) {
@@ -27,8 +30,17 @@ public class pb : MonoBehaviour
         grounded = false;
     }
 
-        
+        if (horizontalInput > 0)
+        {
+            transform.localScale = new Vector3(8, 8, 1);
+        }
+        else if (horizontalInput < 0)
+        {
+            transform.localScale = new Vector3(-8, 8, 1);
+        }
 
+        anim.SetBool("Cat-1-Run", horizontalInput != 0);
+        anim.SetBool("Cat-1-Idle-0", grounded);
 
     }
 

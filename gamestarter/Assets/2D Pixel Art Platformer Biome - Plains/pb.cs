@@ -16,6 +16,7 @@ public class pb : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         speed = 6;
+        anim = GetComponent<Animator>();
     }
 
 
@@ -39,8 +40,12 @@ public class pb : MonoBehaviour
             transform.localScale = new Vector3(-8, 8, 1);
         }
 
-        anim.SetBool("Cat-1-Run", horizontalInput != 0);
-        anim.SetBool("Cat-1-Idle-0", grounded);
+            
+       
+
+        anim.SetBool("Running", horizontalInput != 0);
+        //  anim.SetBool("Idle", horizontalInput == 0);
+        anim.SetBool("Idle", grounded);
 
     }
 

@@ -13,6 +13,7 @@ public class pb : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        speed = 6;
     }
 
 

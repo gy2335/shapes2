@@ -27,9 +27,17 @@ public class pb : MonoBehaviour
         grounded = false;
     }
 
-    if( body.velocity.y == 0) {
-        grounded = true;
+        
+
+
     }
-    }    
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ground")
+        {
+            grounded = true;
+        }
     }
+}
 

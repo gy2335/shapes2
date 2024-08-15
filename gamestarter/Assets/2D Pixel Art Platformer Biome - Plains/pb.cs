@@ -65,6 +65,11 @@ public class pb : MonoBehaviour
         {
             grounded = true;
         }
+        if (collision.gameObject.tag == "Flag")
+        {
+            
+        }
     }
+
 }
 

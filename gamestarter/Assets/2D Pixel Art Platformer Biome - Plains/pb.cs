@@ -24,12 +24,20 @@ public class pb : MonoBehaviour
     void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
-        body.velocity = new Vector2(Input.GetAxis("Horizontal")*speed, body.velocity.y);
-    
-    if( Input.GetKey(KeyCode.Space) && grounded == true ) {
-        body.velocity = new Vector2(body.velocity.x, speed);
-        grounded = false;
-    }
+        body.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.velocity.y);
+
+        if (Input.GetKey(KeyCode.Space) && grounded == true)
+        {
+            body.velocity = new Vector2(body.velocity.x, speed);
+            grounded = false;
+            anim.SetBool("In Air", !grounded);
+
+        }
+        else
+        {
+            anim.SetBool("Landing", true);
+            anim.SetBool("In Air", false);
+        }
 
         if (horizontalInput > 0)
         {
@@ -40,13 +48,15 @@ public class pb : MonoBehaviour
             transform.localScale = new Vector3(-8, 8, 1);
         }
 
-            
-       
 
+
+        //if (grounded == true) { 
         anim.SetBool("Running", horizontalInput != 0);
         //  anim.SetBool("Idle", horizontalInput == 0);
         anim.SetBool("Idle", grounded);
-
+    //}
+      
+        
     }
 
     void OnCollisionEnter2D(Collision2D collision)

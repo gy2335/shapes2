@@ -64,10 +64,10 @@ public class pb : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             grounded = true;
-        }
-        if (collision.gameObject.tag == "Flag")
+        } else 
+        if (collision.gameObject.tag == "Slime")
         {
-            
+            speed = 20;
         }
     }
 

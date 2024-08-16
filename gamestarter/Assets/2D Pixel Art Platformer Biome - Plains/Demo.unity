@@ -5707,6 +5707,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pannnel
       objectReference: {fileID: 0}
+    - target: {fileID: 4837045742435133792, guid: 652cd70b5db18e54789bb6d540d34e55, type: 3}
+      propertyPath: m_Transition
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5702896463530004804, guid: 652cd70b5db18e54789bb6d540d34e55, type: 3}
       propertyPath: m_Pivot.x
       value: 0

@@ -55,9 +55,7 @@ public class pb : MonoBehaviour
         //  anim.SetBool("Idle", horizontalInput == 0);
         anim.SetBool("Idle", grounded);
     //}
-      if (transform.position.y < -10) {
-            Manager.instance.Restart();
-        }
+      
         
     }
 
@@ -68,14 +66,8 @@ public class pb : MonoBehaviour
             grounded = true;
             
         } 
-        
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Flag") {
-            Manager.instance.Win();
-        }
-        if (collision.gameObject.tag == "Slime") {
+        if (collision.gameObject.tag == "Slime")
+        {
             Manager.instance.Restart();
         }
     }

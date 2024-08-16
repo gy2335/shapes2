@@ -55,9 +55,7 @@ public class pb : MonoBehaviour
         //  anim.SetBool("Idle", horizontalInput == 0);
         anim.SetBool("Idle", grounded);
     //}
-      if (transform.position.y < -10) {
-            Manager.instance.Restart();
-        }
+      
         
     }
 

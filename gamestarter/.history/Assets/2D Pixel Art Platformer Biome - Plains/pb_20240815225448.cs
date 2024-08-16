@@ -76,7 +76,7 @@ public class pb : MonoBehaviour
             Manager.instance.Win();
         }
         if (collision.gameObject.tag == "Slime") {
-            Manager.instance.Restart();
+           // Manager.instance.Restart();
         }
     }
 

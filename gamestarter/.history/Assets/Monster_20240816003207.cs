@@ -1,7 +1,7 @@
 using UnityEngine; 
 public class MonsterFollow : MonoBehaviour {
     [SerializeField] float health, maxHealth = 3f;
-    [SerializeField] float moveSpeed = 0.5f;
+    [SerializeField] float moveSpeed;
     private Rigidbody2D rb;
     Transform target;
     Vector2 moveDirection;

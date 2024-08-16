@@ -1253,6 +1253,7 @@ GameObject:
   - component: {fileID: 258566451}
   - component: {fileID: 258566450}
   - component: {fileID: 258566454}
+  - component: {fileID: 258566455}
   m_Layer: 0
   m_Name: Bad Square (3)
   m_TagString: Slime
@@ -1408,6 +1409,33 @@ MonoBehaviour:
   health: 0
   maxHealth: 3
   moveSpeed: 5
+--- !u!50 &258566455
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258566449}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &270060576
 GameObject:
   m_ObjectHideFlags: 0
@@ -27492,8 +27520,8 @@ GameObject:
   - component: {fileID: 1045262957}
   - component: {fileID: 1045262956}
   - component: {fileID: 1045262955}
-  - component: {fileID: 1045262960}
   - component: {fileID: 1045262959}
+  - component: {fileID: 1045262961}
   m_Layer: 0
   m_Name: Bad Square (2)
   m_TagString: Slime
@@ -27649,57 +27677,33 @@ MonoBehaviour:
   health: 0
   maxHealth: 3
   moveSpeed: 5
---- !u!20 &1045262960
-Camera:
+--- !u!50 &1045262961
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045262954}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_NormalizedViewPortRect:
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
+    m_Bits: 0
+  m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1049627102
 GameObject:
   m_ObjectHideFlags: 0
@@ -28913,6 +28917,7 @@ GameObject:
   - component: {fileID: 1191256304}
   - component: {fileID: 1191256303}
   - component: {fileID: 1191256307}
+  - component: {fileID: 1191256308}
   m_Layer: 0
   m_Name: Bad Square (5)
   m_TagString: Slime
@@ -29068,6 +29073,33 @@ MonoBehaviour:
   health: 0
   maxHealth: 3
   moveSpeed: 5
+--- !u!50 &1191256308
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191256302}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1201353381
 GameObject:
   m_ObjectHideFlags: 0
@@ -29165,6 +29197,7 @@ GameObject:
   - component: {fileID: 1223932645}
   - component: {fileID: 1223932648}
   - component: {fileID: 1223932649}
+  - component: {fileID: 1223932650}
   m_Layer: 0
   m_Name: Bad Square
   m_TagString: Slime
@@ -29320,6 +29353,33 @@ MonoBehaviour:
   health: 0
   maxHealth: 3
   moveSpeed: 5
+--- !u!50 &1223932650
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223932644}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1224769840
 GameObject:
   m_ObjectHideFlags: 0
@@ -30383,6 +30443,7 @@ GameObject:
   - component: {fileID: 1496593861}
   - component: {fileID: 1496593860}
   - component: {fileID: 1496593864}
+  - component: {fileID: 1496593865}
   m_Layer: 0
   m_Name: Bad Square (4)
   m_TagString: Slime
@@ -30538,6 +30599,33 @@ MonoBehaviour:
   health: 0
   maxHealth: 3
   moveSpeed: 5
+--- !u!50 &1496593865
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496593859}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1510374751
 GameObject:
   m_ObjectHideFlags: 0
@@ -30975,7 +31063,7 @@ PrefabInstance:
     - target: {fileID: 8214538868824899539, guid: 8594eebbe604557478271a1ad7352eb4, type: 3}
       propertyPath: winScreen
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4752816196265579772, guid: 09eeeacb9c3afd74789fd2c9b6cdfd53, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
